@@ -1,0 +1,15 @@
+{
+  "short_name": "Edward Huang's Portfolio",
+  "name": "Edward JieHao Huang's Web Development and Digital Illustration Portfolio",
+  "icons": [
+    {
+      "src": "Signature.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#163A54",
+  "background_color": "#EEFFFB"
+}
