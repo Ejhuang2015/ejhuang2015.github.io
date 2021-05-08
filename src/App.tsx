@@ -1,15 +1,19 @@
 import React from 'react';
 import Navbar from "./components/Navbar";
+import Billboard from "./components/Billboard";
+import AboutMe from "./components/AboutMe";
+import WebPortfolio from "./components/WebPortfolio";
+import ArtPortfolio from "./components/ArtPortfolio";
 import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      {/* <Billboard />
+      <Billboard />
       <AboutMe />
       <WebPortfolio />
-      <ArtPortfolio /> */}
+      <ArtPortfolio />
       <Footer />
     </div>
   );

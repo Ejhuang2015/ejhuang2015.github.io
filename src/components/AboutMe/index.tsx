@@ -1,4 +1,5 @@
 import React from "react";
+import "./style.css";
 
 function AboutMe() {
 
@@ -11,12 +12,10 @@ function AboutMe() {
               <header className="about">Bio</header>
               <hr className="smallHR"/>
               <p className="content">
-                `An aspiring full stack web developer with strong interests in design and Asian media.
-                Passionate about video games and Japanese culture with a desire to one day move to Japan and work for closely
-                with Nintendo.
-                RPG styled games where customization is plentiful are what I enjoy the most but my favorite series is Fire
-                Emblem.
-                I love comedies and fantasy, prefer cute and fluffy, and am an absolute coward when it comes to horror.`
+                An aspiring full stack web developer with strong interests in design and Asian media.<br/>
+                Passionate about video games and Japanese culture with a desire to one day move to Japan and work for closely with Nintendo.<br/>
+                RPG styled games where customization is plentiful are what I enjoy the most but my favorite series is Fire Emblem.<br/>
+                I love comedies and fantasy, prefer cute and fluffy, and am an absolute coward when it comes to horror.
               </p>
             </div>
             <div className="column is-5 container">
