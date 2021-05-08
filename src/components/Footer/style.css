@@ -1,0 +1,16 @@
+/* Footer Style */
+.footer {
+    font-size: 16px;
+    text-align: center;
+
+    background-color: rgba(238,255,251,0.5);
+
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+
+    border-top: solid 5px;
+    border-image: radial-gradient(#80acff, rgb(128,251,242)) 1;
+
+    padding: 0px;
+}

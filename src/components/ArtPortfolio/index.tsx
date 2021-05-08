@@ -4,7 +4,7 @@ import { artProjects } from "../../common/portfolioProjects";
 function ArtPortfolio() {
 
     return (
-
+        "temp"
     )
 }
 

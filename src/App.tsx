@@ -1,13 +1,16 @@
 import React from 'react';
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <Billboard />
+      {/* <Billboard />
       <AboutMe />
       <WebPortfolio />
-      <ArtPortfolio />
+      <ArtPortfolio /> */}
+      <Footer />
     </div>
   );
 }

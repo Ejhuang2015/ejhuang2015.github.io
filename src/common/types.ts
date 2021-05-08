@@ -5,6 +5,7 @@
 // =============================================================
 // Portfolio Links
 export interface IPortfolioLink {
+    id: number;
     link: string;
     name: string;
 }
