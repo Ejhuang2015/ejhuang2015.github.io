@@ -6,6 +6,9 @@ import { IWebPortfolio, IArtPortfolio } from "./types"
 import truffleShuffle from "../assets/Truffle Shuffle- Laptop.png"
 import artStack from "../assets/artStackDemo.jpg"
 import weatherDash from "../assets/WeatherDashboardScreenshot.png"
+import techBlog from "../assets/PhoneHomepage.png"
+import employeeTracker from "../assets/screen1.png"
+import password from "../assets/password.jpg"
 import obio from "../assets/edward-huang-obio-icon-final.jpg"
 import beachGirl from "../assets/edward-huang-beach-girl.jpg"
 
@@ -35,7 +38,31 @@ const webProjects: IWebPortfolio[] = [
         image: weatherDash,
         sourceLink: "https://github.com/Ejhuang2015/Weather-Dashboard",
         appLink: "https://ejhuang2015.github.io/Weather-Dashboard/"
-    }
+    },
+    {
+        id: 3,
+        title: "MVC Tech Blog",
+        body: `This is a practice application on full-stack web development. Created using Node.js, Express.js, MySQL2, Sequelize, Auth0, and Handlebars. First, all visitors are presented with the homepage where all posts are displayed. If the user clicks the header of a post, they are transported to the post page where they can view all of the post's comments. Attempting to access the Dashboard page will result in the user being prompted to log in via Auth0. Once the user is logged in, they can create posts via the dashboard. Here they can also edit and delete any posts created by them. In the post's page, logged in users will be shown the option to leave a comment.`,
+        image: techBlog,
+        sourceLink: "https://github.com/Ejhuang2015/Tech-Blog-Project",
+        appLink: "https://limitless-mountain-67002.herokuapp.com/"
+    },
+    {
+        id: 4,
+        title: "CLI Employee Tracker",
+        body: `This is a mySQL practice CLI application. Within the console, the user is able to perform CRUD opertaions against three joined tables. It utilizes the Inquirer.js package to prompt for user input and cycling through the options. Also inside is the console.table package to help create a better looking table within the console.`,
+        image: employeeTracker,
+        sourceLink: "https://github.com/Ejhuang2015/SQL-Employee-Tracker",
+        appLink: "https://github.com/Ejhuang2015/SQL-Employee-Tracker"
+    },
+    {
+        id: 4,
+        title: "Javascript Password Generator",
+        body: `This project is a practice on using Javascript. It simply allows the user to generate a password with custom settings, such as password length and the inclusion of case, symbols, and numbers.`,
+        image: password,
+        sourceLink: "https://github.com/Ejhuang2015/Password-Generator",
+        appLink: "https://ejhuang2015.github.io/Password-Generator/"
+    },
 ]
 
 // Digital Art Projects

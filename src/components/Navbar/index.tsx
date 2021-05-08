@@ -64,14 +64,17 @@ function Navbar() {
     // Portfolio Link Items
     function mapPortfolio(item: IPortfolioLink) {
         return (
-            <a href={item.link} className="navbar-item navLink" onClick={closeMenus} key={item.id}>{item.name}</a>
+            <a href={item.link} className="navbar-item navLink" onClick={closeMenus} key={item.id}>
+                {item.name}
+            </a>
         )
     };
     // Contact Link Items
     function mapContacts(item: IContactLink) {
         return (
             <a href={item.link} className="navbar-item navLink" onClick={closeMenus} key={item.id} target="_blank" rel="noreferrer noopener">
-                <img src={item.icon} alt={`${item.name} icon`} className="smallIcon" />{item.name}</a>
+                <img src={item.icon} alt={`${item.name} icon`} className="smallIcon" />{item.name}
+            </a>
         )
     }
 

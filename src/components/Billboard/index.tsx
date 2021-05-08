@@ -18,7 +18,7 @@ function Billboard() {
   // Link Items
   function mapContacts(item: IContactLink) {
     return (
-      <a href={item.link} target="_blank" rel="noreferrer noopener">
+      <a href={item.link} target="_blank" rel="noreferrer noopener" key={item.id}>
         <img src={item.icon} alt={`${item.name} link`} className="footerIcon" />
       </a>
     )

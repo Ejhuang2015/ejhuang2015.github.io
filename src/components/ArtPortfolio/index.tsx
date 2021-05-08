@@ -16,7 +16,7 @@ function ArtPortfolio() {
     // Portfolio Projects
     function mapPortfolio(item: IArtPortfolio) {
         return (
-            <div className="column card">
+            <div className="column is-one-quarter card" key={item.id}>
                 <div className="card-image">
                     <img className="cardImage" src={item.image} alt={`${item.title} illustration`} />
                 </div>
@@ -42,7 +42,7 @@ function ArtPortfolio() {
     return (
         <div className="centered" id="artPortfolio">
             <h3 className="sectionTitle">Digital Art Portfolio</h3>
-            <div className="columns">
+            <div className="columns is-multiline is-centered">
                 {artProjects.map(mapPortfolio)}
             </div>
         </div>

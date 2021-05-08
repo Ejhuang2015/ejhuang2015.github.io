@@ -16,7 +16,7 @@ function WebPortfolio() {
     // Portfolio Projects
     function mapPortfolio(item: IWebPortfolio) {
         return (
-            <div className="column card">
+            <div className="column is-one-quarter card" key={item.id}>
                 <div className="card-image">
                     <img className="cardImage" src={item.image}
                         alt={`${item.title} screenshot`} />
@@ -46,7 +46,7 @@ function WebPortfolio() {
     return (
         <div className="centered" id="webPortfolio">
             <h3 className="sectionTitle">Web Dev Portfolio</h3>
-            <div className="columns">
+            <div className="columns is-multiline is-centered">
                 {webProjects.map(mapPortfolio)}
             </div>
         </div>
