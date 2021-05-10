@@ -4,7 +4,7 @@ This project is a documentation of my journey towards becoming a full stack deve
 View my portfolio here: [Portfolio Link](https://ejhuang2015.github.io/) 
 
 
-![Project example image](./assets/images/PortfolioScreenshot.png)
+![Project example image](./src/assets/PortfolioScreenshot.png)
 
 ## Prerequisites
 
