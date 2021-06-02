@@ -5,8 +5,8 @@ import { IWebPortfolio, IArtPortfolio } from "./types"
 // Image Path
 import truffleShuffle from "../assets/Truffle Shuffle- Laptop.png"
 import artStack from "../assets/artStackDemo.jpg"
+import healthyu from "../assets/Healthy-U.jpg"
 import weatherDash from "../assets/WeatherDashboardScreenshot.png"
-import techBlog from "../assets/PhoneHomepage.png"
 import employeeTracker from "../assets/screen1.png"
 import password from "../assets/password.jpg"
 import obio from "../assets/edward-huang-obio-icon-final.jpg"
@@ -33,19 +33,19 @@ const webProjects: IWebPortfolio[] = [
     },
     {
         id: 2,
+        title: "Healthy-U",
+        body: `This is a practice application on full-stack web development. Created using Node.js, Express.js, MongoDB, Auth0, and React. Users are first brought the the home page where a few cards about nutrition and meditation are displayed. Accessing any other page requires user to login/signup through Auth0. The main appeal of this project lies in the profile page where users are greeted with a daily goal tracker where you can check off how many glasses of water, servings of fruits/veggies, and unhealthy habits the user has done today. Below that is another component where users can enter in their own challenge which requires the user to report in for 49 days to better themselves.`,
+        image: healthyu,
+        sourceLink: "https://github.com/Ejhuang2015/Healthy-U-Frontend",
+        appLink: "https://healthy-u.netlify.app/"
+    },
+    {
+        id: 3,
         title: "Weather Dashboard",
         body: `This project is a practice on using api and ajax. It is weather checking application where the user can enter in a city and find the its current weather, temperature, 5 day update and more. The application also keeps track of past cities that the user has searched for and can quickly bring up the latest information for that city. On a page load, the last city to be manually searched for is brought up. A clear button is provided to clear the search history.`,
         image: weatherDash,
         sourceLink: "https://github.com/Ejhuang2015/Weather-Dashboard",
         appLink: "https://ejhuang2015.github.io/Weather-Dashboard/"
-    },
-    {
-        id: 3,
-        title: "MVC Tech Blog",
-        body: `This is a practice application on full-stack web development. Created using Node.js, Express.js, MySQL2, Sequelize, Auth0, and Handlebars. First, all visitors are presented with the homepage where all posts are displayed. If the user clicks the header of a post, they are transported to the post page where they can view all of the post's comments. Attempting to access the Dashboard page will result in the user being prompted to log in via Auth0. Once the user is logged in, they can create posts via the dashboard. Here they can also edit and delete any posts created by them. In the post's page, logged in users will be shown the option to leave a comment.`,
-        image: techBlog,
-        sourceLink: "https://github.com/Ejhuang2015/Tech-Blog-Project",
-        appLink: "https://limitless-mountain-67002.herokuapp.com/"
     },
     {
         id: 4,
