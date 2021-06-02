@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/React-Portfolio/static/css/main.42954f19.chunk.css",
-    "main.js": "/React-Portfolio/static/js/main.102fe734.chunk.js",
-    "main.js.map": "/React-Portfolio/static/js/main.102fe734.chunk.js.map",
+    "main.js": "/React-Portfolio/static/js/main.81fd14c4.chunk.js",
+    "main.js.map": "/React-Portfolio/static/js/main.81fd14c4.chunk.js.map",
     "runtime-main.js": "/React-Portfolio/static/js/runtime-main.6e6f7457.js",
     "runtime-main.js.map": "/React-Portfolio/static/js/runtime-main.6e6f7457.js.map",
     "static/js/2.f6a5bb88.chunk.js": "/React-Portfolio/static/js/2.f6a5bb88.chunk.js",
@@ -12,7 +12,7 @@
     "static/js/2.f6a5bb88.chunk.js.LICENSE.txt": "/React-Portfolio/static/js/2.f6a5bb88.chunk.js.LICENSE.txt",
     "static/media/style.css": "/React-Portfolio/static/media/Abstract-BG.691af72f.jpg",
     "static/media/Headshot.f990f60e.jpg": "/React-Portfolio/static/media/Headshot.f990f60e.jpg",
-    "static/media/PhoneHomepage.63961535.png": "/React-Portfolio/static/media/PhoneHomepage.63961535.png",
+    "static/media/Healthy-U.a1c307f6.jpg": "/React-Portfolio/static/media/Healthy-U.a1c307f6.jpg",
     "static/media/SignatureWide.9d298f04.png": "/React-Portfolio/static/media/SignatureWide.9d298f04.png",
     "static/media/Truffle Shuffle- Laptop.546a68a2.png": "/React-Portfolio/static/media/Truffle Shuffle- Laptop.546a68a2.png",
     "static/media/WeatherDashboardScreenshot.6d42d838.png": "/React-Portfolio/static/media/WeatherDashboardScreenshot.6d42d838.png",
@@ -26,6 +26,6 @@
     "static/js/runtime-main.6e6f7457.js",
     "static/js/2.f6a5bb88.chunk.js",
     "static/css/main.42954f19.chunk.css",
-    "static/js/main.102fe734.chunk.js"
+    "static/js/main.81fd14c4.chunk.js"
   ]
 }
