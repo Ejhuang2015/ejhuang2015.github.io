@@ -8,7 +8,7 @@ View my portfolio here: [Portfolio Link](https://ejhuang2015.github.io/)
 
 ## Prerequisites
 
-Any web browswer that allows the user to open and view HTML files and run JavaScript will do.
+Any web browser that allows the user to open and view HTML files and run JavaScript will do.
 
 ## Contributors
 
