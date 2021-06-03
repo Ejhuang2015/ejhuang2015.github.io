@@ -21,7 +21,7 @@ function AboutMe() {
               <header className="about">Attributes</header>
               <hr className="smallHR"/>
               <div className="columns about">
-                <div className="column is-6">
+                <div className="column is-4">
                   <header className="about underlined">Traits</header>
                   <ul>
                     <li>Well Organized</li>
@@ -29,11 +29,19 @@ function AboutMe() {
                     <li>Team-Oriented</li>
                   </ul>
                 </div>
-                <div className="column is-6">
-                  <header className="about underlined">Skills</header>
+                <div className="column is-4">
+                  <header className="about underlined">Languages</header>
                   <ul>
-                    <li>Javascript</li>
+                    <li>TypeScript</li>
                     <li>C++</li>
+                    <li>Python</li>
+                  </ul>
+                </div>
+                <div className="column is-4">
+                  <header className="about underlined">Technologies</header>
+                  <ul>
+                    <li>React</li>
+                    <li>Node.js</li>
                     <li>Adobe Photoshop</li>
                   </ul>
                 </div>
