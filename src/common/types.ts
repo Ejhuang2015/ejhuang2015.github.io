@@ -23,7 +23,9 @@ export interface IContactLink {
 export interface IWebPortfolio {
     id: number;
     title: string;
-    body: string;
+    desc: string;
+    job: string;
+    tools: string[];
     image: string;
     sourceLink: string;
     appLink: string;

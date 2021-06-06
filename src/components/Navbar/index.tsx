@@ -5,6 +5,7 @@
 // =============================================================
 import React, { useState, useRef } from "react";
 import useOnClickOutside from '../../utils/clickOutside';
+import Modal from '../Modal';
 import "./style.css";
 import { IContactLink, IPortfolioLink } from "../../common/types"
 import { contactLinks, portfolioLinks } from "../../common/navLinks";
@@ -123,22 +124,17 @@ function Navbar() {
                 </div>
             </nav>
 
-            {/* <!-- Contact Information Modal --> */}
-            <div className={modalState ? "modal is-active" : "modal"} id="contactModal">
-                <div className="modal-background" onClick={closeModal}></div>
-                <div className="modal-card">
-                    <header className="modal-card-head">
-                        <p className="modal-card-title">Reach out to me!</p>
-                        <button className="delete modalClose" onClick={closeModal} aria-label="close"></button>
-                    </header>
-                    <section className="modal-card-body">
-                        <ol>
-                            <li><strong>Phone:</strong> <a href="tel:6033917861">(603) 391-7861</a></li>
-                            <li><strong>Email:</strong> <a href="mailto:ejhuang.2015@gmail.com">ejhuang.2015@gmail.com</a></li>
-                        </ol>
-                    </section>
-                </div>
-            </div>
+            <Modal header="Reach out to me!" 
+                body={
+                    <ul>
+                        <li><strong>Phone:</strong> <a href="tel:6033917861">(603) 391-7861</a></li>
+                        <li><strong>Email:</strong> <a href="mailto:ejhuang.2015@gmail.com">ejhuang.2015@gmail.com</a></li>
+                    </ul>
+                }
+                state={modalState}
+                closeFunc={closeModal}
+            />
+
         </div>
     )
 }
