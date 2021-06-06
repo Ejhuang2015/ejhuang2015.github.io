@@ -123,6 +123,10 @@ img.footerIcon:focus,
 img.footerIcon:hover {
     border: 2px solid transparent;
 }
+/* Illustration images */
+img.illustration {
+    cursor: pointer;
+}
 /* Contact Links in line icons */
 .smallIcon {
     width: 15px;
