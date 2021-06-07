@@ -17,13 +17,13 @@ import beachGirl from "../assets/edward-huang-beach-girl.jpg"
 const webProjects: IWebPortfolio[] = [
     {
         id: 0,
-        title: "Truffle Shuffle",
-        desc: `The Truffle-Shuffle project is a lightweight application that helps an indecisive user(s) generate ideas on what movie to watch and what cocktail to drink. The user is first given the option to choose a cocktail based on their alcohol preference or just a random drink from the CocktailDB database. After getting their drink, the user is presented with a wheel that lets them spin for a random genre and decade. If need be, the user can respin the wheel to grab a different genre/decade. Based on these results a movie is obtained from the MovieDB database and presented to the user.`,
-        job: "Created and implemented the Javascript, formatted the HTML layout, finalized the website styling.",
-        tools: ["TMDB Api", "TheCocktailDB Api", "jQuery", "Materialize", "GitHub"],
-        image: truffleShuffle,
-        sourceLink: "https://github.com/Laura-Bullek/Truffle-Shuffle",
-        appLink: "https://laura-bullek.github.io/Truffle-Shuffle/"
+        title: "Healthy-U",
+        desc: `This is a practice application on full-stack web development. Created using Node.js, Express.js, MongoDB, Auth0, and React. Users are first brought the the home page where a few cards about nutrition and meditation are displayed. Accessing any other page requires user to login/signup through Auth0. The main appeal of this project lies in the profile page where users are greeted with a daily goal tracker where you can check off how many glasses of water, servings of fruits/veggies, and unhealthy habits the user has done today. Below that is another component where users can enter in their own challenge which requires the user to report in for 49 days to better themselves.`,
+        job: "Created and maintained the backend server, developed all the functional React components, implemented authentication",
+        tools: ["React", "Bootstrap", "Express", "MongoDB", "Auth0", "Netlify", "Heroku", "Material UI"],
+        image: healthyu,
+        sourceLink: "https://github.com/Ejhuang2015/Healthy-U-Frontend",
+        appLink: "https://healthy-u.netlify.app/"
     },
     {
         id: 1,
@@ -37,13 +37,13 @@ const webProjects: IWebPortfolio[] = [
     },
     {
         id: 2,
-        title: "Healthy-U",
-        desc: `This is a practice application on full-stack web development. Created using Node.js, Express.js, MongoDB, Auth0, and React. Users are first brought the the home page where a few cards about nutrition and meditation are displayed. Accessing any other page requires user to login/signup through Auth0. The main appeal of this project lies in the profile page where users are greeted with a daily goal tracker where you can check off how many glasses of water, servings of fruits/veggies, and unhealthy habits the user has done today. Below that is another component where users can enter in their own challenge which requires the user to report in for 49 days to better themselves.`,
-        job: "Created and maintained the backend server, developed all the functional React components, implemented authentication",
-        tools: ["React", "Bootstrap", "Express", "MongoDB", "Auth0", "Netlify", "Heroku", "Material UI"],
-        image: healthyu,
-        sourceLink: "https://github.com/Ejhuang2015/Healthy-U-Frontend",
-        appLink: "https://healthy-u.netlify.app/"
+        title: "Truffle Shuffle",
+        desc: `The Truffle-Shuffle project is a lightweight application that helps an indecisive user(s) generate ideas on what movie to watch and what cocktail to drink. The user is first given the option to choose a cocktail based on their alcohol preference or just a random drink from the CocktailDB database. After getting their drink, the user is presented with a wheel that lets them spin for a random genre and decade. If need be, the user can respin the wheel to grab a different genre/decade. Based on these results a movie is obtained from the MovieDB database and presented to the user.`,
+        job: "Created and implemented the Javascript, formatted the HTML layout, finalized the website styling.",
+        tools: ["TMDB Api", "TheCocktailDB Api", "jQuery", "Materialize", "GitHub"],
+        image: truffleShuffle,
+        sourceLink: "https://github.com/Laura-Bullek/Truffle-Shuffle",
+        appLink: "https://laura-bullek.github.io/Truffle-Shuffle/"
     },
     {
         id: 3,
