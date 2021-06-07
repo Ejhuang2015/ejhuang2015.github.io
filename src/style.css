@@ -90,6 +90,20 @@ strong {
     height: 150px;
     overflow-y: auto;
 }
+.card-content-tall{
+    height: 300px;
+    overflow-y: auto;
+}
+@media screen and (max-width: 1024px) {
+    .card-content-tall {
+        max-height: 150px;
+        margin: auto;
+    }
+}
+.card-content-small{
+    height: 75px;
+    overflow-y: auto;
+}
 /* Card Footer */
 .card-footer {
     border-color: rgb(128,251,242);

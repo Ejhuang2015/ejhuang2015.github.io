@@ -124,9 +124,9 @@ function Navbar() {
                 </div>
             </nav>
 
-            <Modal header="Reach out to me!" 
+            <Modal header="Reach out to me" 
                 body={
-                    <ul>
+                    <ul className="mt-0">
                         <li><strong>Phone:</strong> <a href="tel:6033917861">(603) 391-7861</a></li>
                         <li><strong>Email:</strong> <a href="mailto:ejhuang.2015@gmail.com">ejhuang.2015@gmail.com</a></li>
                     </ul>

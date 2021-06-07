@@ -29,7 +29,7 @@ const webProjects: IWebPortfolio[] = [
         id: 1,
         title: "Art Stack",
         desc: `The Art Stack project is a full-stack application made to help connect local artists and interested parties. It creates a space where artists can post their work and onlookers can view the assortment of artwork available.`,
-        job: "Developed the MVC structure, organized the HTML and unified the website styling.",
+        job: "Developed the MVC structure, made the CRUD operations, organized the HTML and unified the website styling.",
         tools: ["jQuery", "JWT", "ExpressJS", "Handlebars", "MySQL", "Heroku", "Bootstrap"],
         image: artStack,
         sourceLink: "https://github.com/TheTiiiim/art-stack",

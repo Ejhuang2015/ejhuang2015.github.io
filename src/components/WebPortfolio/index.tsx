@@ -33,11 +33,11 @@ function WebPortfolio() {
                                 {item.desc}
                             </p>
                         </div>
-                            <hr className="smallHR"/>
                         <div>
-                            <p className="is-centered card-header-title">Role</p>
                             <hr className="smallHR"/>
-                            <p className="content">
+                                <p className="is-centered card-header-title py-1">Role</p>
+                            <hr className="smallHR"/>
+                            <p className="card-content-small">
                                 {item.job}
                             </p>
                         </div>
@@ -45,9 +45,9 @@ function WebPortfolio() {
                     <div className="column">
                         <div>
                             <hr className="smallHR"/>
-                                <p className="is-centered card-header-title">Technology</p>
+                                <p className="is-centered card-header-title py-1">Technology</p>
                             <hr className="smallHR"/>
-                            <div className="content">
+                            <div className="card-content-tall">
                                 <ul>
                                     {item.tools.map(mapTools)}
                                 </ul>

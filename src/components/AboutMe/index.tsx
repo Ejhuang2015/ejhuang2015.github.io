@@ -23,7 +23,7 @@ function AboutMe() {
               <div className="columns about">
                 <div className="column is-4">
                   <header className="about underlined">Traits</header>
-                  <ul>
+                  <ul className="noBullets">
                     <li>Well Organized</li>
                     <li>Honest</li>
                     <li>Team-Oriented</li>
@@ -31,7 +31,7 @@ function AboutMe() {
                 </div>
                 <div className="column is-4">
                   <header className="about underlined">Languages</header>
-                  <ul>
+                  <ul className="noBullets">
                     <li>TypeScript</li>
                     <li>C++</li>
                     <li>Python</li>
@@ -39,7 +39,7 @@ function AboutMe() {
                 </div>
                 <div className="column is-4">
                   <header className="about underlined">Technologies</header>
-                  <ul>
+                  <ul className="noBullets">
                     <li>React</li>
                     <li>Node.js</li>
                     <li>Adobe Photoshop</li>
