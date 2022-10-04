@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './lightBlueStyle.css';
 import './style.css';
+import './lightBlueStyle.css';
 import App from './App';
 
 ReactDOM.render(

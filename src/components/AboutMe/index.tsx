@@ -7,17 +7,14 @@ function AboutMe() {
           <h3 className="sectionTitle">About</h3>
           <div className="columns is-vcentered">
             <div className="empty column is-1"></div>
-            <div className="column is-5 container">
+            <div className="column is-4 container">
               <header className="about">Bio</header>
               <hr className="smallHR"/>
               <p className="content">
-                An aspiring full stack web developer with strong interests in design and Asian media.<br/>
-                Passionate about video games and Japanese culture with a desire to one day move to Japan and work for closely with Nintendo.<br/>
-                RPG styled games where customization is plentiful are what I enjoy the most but my favorite series is Fire Emblem.<br/>
-                I love comedies and fantasy, prefer cute and fluffy, and am an absolute coward when it comes to horror.
+              I am a graduate from University of New Hampshire’s full stack coding bootcamp where I learned technologies ranging from Typescript and React to Express.js and MongoDB and a graduate from Becker College where I studied interactive media design with a focus on digital illustration. Within my experience, I have created many beautiful and functional web applications that are responsive between a variety of devices such as computers, tablets, and mobile phones. I've also been working with multiple e-commerce sites within the pet health and mobility solutions industry, researching and creating intricate web applications to drive new customer sales and boost client retention.
               </p>
             </div>
-            <div className="column is-5 container">
+            <div className="column is-4 container">
               <header className="about">Attributes</header>
               <hr className="smallHR"/>
               <div className="columns about">
@@ -26,7 +23,7 @@ function AboutMe() {
                   <ul className="noBullets">
                     <li>Well Organized</li>
                     <li>Honest</li>
-                    <li>Team-Oriented</li>
+                    <li>Focused</li>
                   </ul>
                 </div>
                 <div className="column is-4">
@@ -42,7 +39,7 @@ function AboutMe() {
                   <ul className="noBullets">
                     <li>React</li>
                     <li>Node.js</li>
-                    <li>Adobe Photoshop</li>
+                    <li>Bootstrap</li>
                   </ul>
                 </div>
               </div>

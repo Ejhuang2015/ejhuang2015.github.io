@@ -28,7 +28,6 @@ body {
 .container {
     padding: 5px;
     margin: auto;
-    margin-bottom: 15px;
     background: rgb(238,255,251,0.50);
     border-radius: 25px;
     border: 2px solid rgb(128,251,242);

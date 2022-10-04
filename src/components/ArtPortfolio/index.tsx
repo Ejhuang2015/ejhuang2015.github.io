@@ -49,7 +49,7 @@ function ArtPortfolio() {
                 </div>
                 <footer className="card-footer">
                     <a href={item.link} className="card-footer-item" target="_blank"
-                        rel="noreferrer noopener">Open in ArtStation</a>
+                        rel="noreferrer noopener">Open Link</a>
                 </footer>
             </div>
         )

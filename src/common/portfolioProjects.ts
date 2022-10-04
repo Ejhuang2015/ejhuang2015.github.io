@@ -6,11 +6,13 @@ import { IWebPortfolio, IArtPortfolio } from "./types"
 import truffleShuffle from "../assets/Truffle Shuffle- Laptop.png"
 import artStack from "../assets/artStackDemo.jpg"
 import healthyu from "../assets/Healthy-U.jpg"
+import tictactoe from "../assets/React-Tic-Tac-Toe.png"
 import weatherDash from "../assets/WeatherDashboardScreenshot.png"
 import employeeTracker from "../assets/screen1.png"
 import password from "../assets/password.jpg"
 import obio from "../assets/edward-huang-obio-icon-final.jpg"
-import beachGirl from "../assets/edward-huang-beach-girl.jpg"
+import pizzaBros from "../assets/Pizza-Bros.jpg"
+import oldBook from "../assets/old-book.jpg"
 
 // Web Development Projects
 // =============================================================
@@ -37,6 +39,16 @@ const webProjects: IWebPortfolio[] = [
     },
     {
         id: 2,
+        title: "Tic Tac Toe",
+        desc: `A practice application based on the classic game of Tic Tac Toe! This project utilizes Tailwind as the CSS framework and is written using TypeScript. Simply grab a friend and start playing Tic Tac Toe by clicking your square. You can see whose turn it is and see how many wins each player has. All data is stored in local storage so the game data persists on the browser. You can restart the game, undo moves, and clear the score by pressing the appropriate button.`,
+        job: "Developed the project to practice TailwindCSS.",
+        tools: ["React", "Tailwind", "TypeScript"],
+        image: tictactoe,
+        sourceLink: "https://github.com/Ejhuang2015/react-tic-tac-toe",
+        appLink: "https://github.com/Ejhuang2015/react-tic-tac-toe"
+    },
+    {
+        id: 3,
         title: "Truffle Shuffle",
         desc: `The Truffle-Shuffle project is a lightweight application that helps an indecisive user(s) generate ideas on what movie to watch and what cocktail to drink. The user is first given the option to choose a cocktail based on their alcohol preference or just a random drink from the CocktailDB database. After getting their drink, the user is presented with a wheel that lets them spin for a random genre and decade. If need be, the user can respin the wheel to grab a different genre/decade. Based on these results a movie is obtained from the MovieDB database and presented to the user.`,
         job: "Created and implemented the Javascript, formatted the HTML layout, finalized the website styling.",
@@ -46,7 +58,7 @@ const webProjects: IWebPortfolio[] = [
         appLink: "https://laura-bullek.github.io/Truffle-Shuffle/"
     },
     {
-        id: 3,
+        id: 4,
         title: "Weather Dashboard",
         desc: `This project is a practice on using api and ajax. It is weather checking application where the user can enter in a city and find the its current weather, temperature, 5 day update and more. The application also keeps track of past cities that the user has searched for and can quickly bring up the latest information for that city. On a page load, the last city to be manually searched for is brought up. A clear button is provided to clear the search history.`,
         job: "Developed the site to practice using and learning about a RESTful api",
@@ -56,7 +68,7 @@ const webProjects: IWebPortfolio[] = [
         appLink: "https://ejhuang2015.github.io/Weather-Dashboard/"
     },
     {
-        id: 4,
+        id: 5,
         title: "CLI Employee Tracker",
         desc: `This is a mySQL practice CLI application. Within the console, the user is able to perform CRUD opertaions against three joined tables. It utilizes the Inquirer.js package to prompt for user input and cycling through the options. Also inside is the console.table package to help create a better looking table within the console.`,
         job: "Designed this application as a start to learning backend web development",
@@ -66,7 +78,7 @@ const webProjects: IWebPortfolio[] = [
         appLink: "https://github.com/Ejhuang2015/SQL-Employee-Tracker"
     },
     {
-        id: 5,
+        id: 6,
         title: "Javascript Password Generator",
         desc: `This project is a practice on using Javascript. It simply allows the user to generate a password with custom settings, such as password length and the inclusion of case, symbols, and numbers.`,
         job: "Produced this website as the first step into developing HTML sites with Javascript",
@@ -89,10 +101,17 @@ const artProjects: IArtPortfolio[] = [
     },
     {
         id: 1,
-        title: "Beach Girl Illustration",
-        body: `A drawing made to practice grayscale to color shading technique.`,
-        image: beachGirl,
-        link: "https://www.artstation.com/artwork/68nZ2N"
+        title: "Pizza Bros",
+        body: `A 3D model made to be printed about Pizza Bros, frog edition`,
+        image: pizzaBros,
+        link: "https://www.artstation.com/artwork/Le6PeP"
+    },
+    {
+        id: 2,
+        title: "Froggyfall: Old Book",
+        body: `A quick drawing done as a prompt for Froggyfall 2022`,
+        image: oldBook,
+        link: "https://twitter.com/ZekeroXBlade/status/1576572712591450112"
     },
 ]
 

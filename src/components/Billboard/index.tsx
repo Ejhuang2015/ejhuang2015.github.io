@@ -31,14 +31,8 @@ function Billboard() {
       <div className="empty column is-3"></div>
       <header className="column is-4">
         <h1>Edward JieHao Huang</h1>
-        <h2>Full Stack Web Developer and Digital Artist</h2>
         <hr />
-        <p className="quote">
-          Striving for perfection and a keen eye for detail,<br />
-            I promise that I won't disappoint or fail.<br />
-            A passion for creativity and design,<br />
-            I ensure my work will be divine.
-          </p>
+        <p className="quote">Full Stack Web Developer and Digital Artist</p>
         <hr />
         <div className="singleLine">
           {contactLinks.map(mapContacts)}
