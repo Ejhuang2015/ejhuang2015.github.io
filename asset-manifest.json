@@ -1,31 +1,33 @@
 {
   "files": {
-    "main.css": "/static/css/main.62487015.chunk.css",
-    "main.js": "/static/js/main.8bf76d75.chunk.js",
-    "main.js.map": "/static/js/main.8bf76d75.chunk.js.map",
+    "main.css": "/static/css/main.5e2caf71.chunk.css",
+    "main.js": "/static/js/main.29ac4965.chunk.js",
+    "main.js.map": "/static/js/main.29ac4965.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.406dd86f.js",
     "runtime-main.js.map": "/static/js/runtime-main.406dd86f.js.map",
     "static/js/2.f6a5bb88.chunk.js": "/static/js/2.f6a5bb88.chunk.js",
     "static/js/2.f6a5bb88.chunk.js.map": "/static/js/2.f6a5bb88.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.62487015.chunk.css.map": "/static/css/main.62487015.chunk.css.map",
+    "static/css/main.5e2caf71.chunk.css.map": "/static/css/main.5e2caf71.chunk.css.map",
     "static/js/2.f6a5bb88.chunk.js.LICENSE.txt": "/static/js/2.f6a5bb88.chunk.js.LICENSE.txt",
     "static/media/style.css": "/static/media/Abstract-BG.691af72f.jpg",
     "static/media/Headshot.f990f60e.jpg": "/static/media/Headshot.f990f60e.jpg",
     "static/media/Healthy-U.a1c307f6.jpg": "/static/media/Healthy-U.a1c307f6.jpg",
+    "static/media/Pizza-Bros.e76e3bb4.jpg": "/static/media/Pizza-Bros.e76e3bb4.jpg",
+    "static/media/React-Tic-Tac-Toe.18e9fcf9.png": "/static/media/React-Tic-Tac-Toe.18e9fcf9.png",
     "static/media/SignatureWide.9d298f04.png": "/static/media/SignatureWide.9d298f04.png",
     "static/media/Truffle Shuffle- Laptop.546a68a2.png": "/static/media/Truffle Shuffle- Laptop.546a68a2.png",
     "static/media/WeatherDashboardScreenshot.6d42d838.png": "/static/media/WeatherDashboardScreenshot.6d42d838.png",
     "static/media/artStackDemo.8d23be0e.jpg": "/static/media/artStackDemo.8d23be0e.jpg",
-    "static/media/edward-huang-beach-girl.fdb20e1f.jpg": "/static/media/edward-huang-beach-girl.fdb20e1f.jpg",
     "static/media/edward-huang-obio-icon-final.0f60261b.jpg": "/static/media/edward-huang-obio-icon-final.0f60261b.jpg",
+    "static/media/old-book.fd21d500.jpg": "/static/media/old-book.fd21d500.jpg",
     "static/media/password.40abb4d7.jpg": "/static/media/password.40abb4d7.jpg",
     "static/media/screen1.7109c3d6.png": "/static/media/screen1.7109c3d6.png"
   },
   "entrypoints": [
     "static/js/runtime-main.406dd86f.js",
     "static/js/2.f6a5bb88.chunk.js",
-    "static/css/main.62487015.chunk.css",
-    "static/js/main.8bf76d75.chunk.js"
+    "static/css/main.5e2caf71.chunk.css",
+    "static/js/main.29ac4965.chunk.js"
   ]
 }
