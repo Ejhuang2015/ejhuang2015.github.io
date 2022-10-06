@@ -10,21 +10,34 @@ import "./style.css";
 // Main
 // =============================================================
 function Contact() {
-
+    
     // State Management
     // =============================================================
     // Form Data
     const formReducer = (state: any, event: any) => {
-        return {
-            ...state,
-            [event.name]: event.value
+        switch(event.type) {
+            case "CLEAR_FORM" : 
+                return {
+                    name: "",
+                    email: "",
+                    message: ""
+                }
+            default :
+                return {
+                    ...state,
+                    [event.name]: event.value
+                }
         }
     }
+
     const [formData, setFormData] = useReducer(formReducer, {
         name: "",
         email: "",
         message: ""
     });
+
+    // Submit Disable Toggle
+    const [submitState, setSubmit] = useState(false);
 
     // Contact Modal Toggle
     const [modalState, setModal] = useState(false);
@@ -45,6 +58,7 @@ function Contact() {
     // Form Submission AJAX
     function handleSubmit(event: any) {
         event.preventDefault();
+        setSubmit(true);
 
         fetch("https://formsubmit.co/ajax/ejhuang.2015@gmail.com", {
         method: "POST",
@@ -65,9 +79,11 @@ function Contact() {
         })
         .catch(error => console.log(error));
     }
-
+    
     // Closes modal
     function closeModal() {
+        setFormData({type: "CLEAR_FORM"})
+        setSubmit(false);
         setModal(false);
     }
 
@@ -81,7 +97,7 @@ function Contact() {
                     <input type="text" name="name" placeholder="Name" required onChange={handleChange} value={formData.name || ""} />
                     <input type="email" name="email" placeholder="Email Address" required onChange={handleChange} value={formData.email || ""} />
                     <textarea name="message" placeholder="Message" required onChange={handleChange} value={formData.message || ""} />
-                    <button className="button buttonBlue" type="submit">Send</button>
+                    <button className="button buttonBlue" type="submit" disabled={submitState}>Send</button>
                 </form>
             </div>
 
