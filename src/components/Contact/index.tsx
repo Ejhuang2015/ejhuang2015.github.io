@@ -91,7 +91,7 @@ function Contact() {
     // =============================================================
     return (
         <div className="centered" id="contact">
-            <h3 className="sectionTitle">Contact Me</h3>
+            <h3 className="sectionTitle mb-6">Contact Me</h3>
             <div className="columns">
                 <form className="card column is-three-quarters" onSubmit={handleSubmit}>
                     <input type="text" name="name" placeholder="Name" required onChange={handleChange} value={formData.name || ""} />

@@ -114,8 +114,20 @@ hr {
     size: 2px;
     background-color: rgb(128,251,242);
 }
+hr.tinyHR {
+    width: 25%;
+    margin: 5px auto;
+}
 hr.smallHR {
     width: 75%;
+    margin: 5px auto;
+}
+hr.wideHR {
+    width: 95%;
+    margin: 5px auto;
+}
+hr.fullHR {
+    width: 100%;
     margin: 5px auto;
 }
 /* Lists */
@@ -135,6 +147,7 @@ p.quote {
     font-weight: normal;
     font-family: cursive;
     font-style: italic;
+    line-height: 2rem;
 }
 
 /* ----- 3. Basic Formatting Options----- */

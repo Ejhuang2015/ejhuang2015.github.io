@@ -109,6 +109,8 @@ function Navbar() {
                                 {portfolioLinks.map(mapPortfolio)}
                             </div>
                         </div>
+                        {/* <!-- Contact Me Link --> */}
+                        <a href="#contact" className="navbar-item navLink" onClick={closeMenus}>Contact Me</a>
                     </div>
                     {/* <!-- Navigation Links Right Side --> */}
                     <div className="navbar-end">

@@ -76,7 +76,7 @@ function WebPortfolio() {
     // =============================================================
     return (
         <div className="centered" id="webPortfolio">
-            <h3 className="sectionTitle">Web Dev Portfolio</h3>
+            <h3 className="sectionTitle mb-6">Web Dev Portfolio</h3>
             <div className="columns is-multiline is-centered">
                 {webProjects.map(mapPortfolio)}
             </div>

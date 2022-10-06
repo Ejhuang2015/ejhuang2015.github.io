@@ -59,7 +59,7 @@ function ArtPortfolio() {
     // =============================================================
     return (
             <div className="centered" id="artPortfolio">
-                <h3 className="sectionTitle">Digital Art Portfolio</h3>
+                <h3 className="sectionTitle mb-6">Digital Art Portfolio</h3>
                 <div className="columns is-multiline is-centered">
                     {artProjects.map(mapPortfolio)}
                 </div>
