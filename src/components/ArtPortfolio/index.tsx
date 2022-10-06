@@ -58,13 +58,11 @@ function ArtPortfolio() {
     // Render
     // =============================================================
     return (
-        <div>
             <div className="centered" id="artPortfolio">
                 <h3 className="sectionTitle">Digital Art Portfolio</h3>
                 <div className="columns is-multiline is-centered">
                     {artProjects.map(mapPortfolio)}
                 </div>
-            </div>
 
             <Modal header= {modalImageState.title}
                 body={
@@ -73,7 +71,7 @@ function ArtPortfolio() {
                 state={modalState}
                 closeFunc={closeModal}
             />
-        </div>
+            </div>
     )
 }
 

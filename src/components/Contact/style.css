@@ -1,0 +1,11 @@
+#contact form {
+    display:flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 20px;
+}
+
+#contact button[type=submit] {
+    padding:12px 5rem;
+    margin: auto;
+}

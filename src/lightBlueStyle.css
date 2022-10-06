@@ -60,7 +60,6 @@ a:active {
 /* Button Tags */
 .button {
     padding: 12px 20px;
-    border: none;
 }
 
 .buttonBlue {
@@ -88,11 +87,16 @@ a:active {
 }
 
 /* Text Input Tags */
-input[type=text] {
+input[type=text], input[type=email], textarea {
     margin: 5px 0px;
     padding: 12px;
     border: 1px solid rgb(128,251,242);
     resize: vertical;
+    border-radius: 3px;
+}
+textarea {
+    min-height: 3rem;
+    height: 12rem;
 }
 
 /* h1-6 Styling */

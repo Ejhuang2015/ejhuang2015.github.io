@@ -6,7 +6,7 @@
 import React from "react";
 import { IContactLink } from "../../common/types"
 import { contactLinks } from "../../common/navLinks";
-import headshot from "../../assets/Headshot.jpg"
+import headshot from "../../assets/Edward.jpg"
 import emailIcon from "../../assets/email.png";
 
 // Main
