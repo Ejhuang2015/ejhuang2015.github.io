@@ -1,17 +1,18 @@
 {
   "files": {
-    "main.css": "/static/css/main.7c7b77d8.chunk.css",
-    "main.js": "/static/js/main.98e51cc2.chunk.js",
-    "main.js.map": "/static/js/main.98e51cc2.chunk.js.map",
+    "main.css": "/static/css/main.9be11d5d.chunk.css",
+    "main.js": "/static/js/main.a3adb72a.chunk.js",
+    "main.js.map": "/static/js/main.a3adb72a.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.406dd86f.js",
     "runtime-main.js.map": "/static/js/runtime-main.406dd86f.js.map",
     "static/js/2.58908c0a.chunk.js": "/static/js/2.58908c0a.chunk.js",
     "static/js/2.58908c0a.chunk.js.map": "/static/js/2.58908c0a.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.7c7b77d8.chunk.css.map": "/static/css/main.7c7b77d8.chunk.css.map",
+    "static/css/main.9be11d5d.chunk.css.map": "/static/css/main.9be11d5d.chunk.css.map",
     "static/js/2.58908c0a.chunk.js.LICENSE.txt": "/static/js/2.58908c0a.chunk.js.LICENSE.txt",
-    "static/media/style.css": "/static/media/Abstract-BG.691af72f.jpg",
+    "static/media/lightBlueStyle.css": "/static/media/Abstract-BG.691af72f.jpg",
     "static/media/Edward.b430f1a7.jpg": "/static/media/Edward.b430f1a7.jpg",
+    "static/media/Headshot.6d37011a.jpg": "/static/media/Headshot.6d37011a.jpg",
     "static/media/Healthy-U.a1c307f6.jpg": "/static/media/Healthy-U.a1c307f6.jpg",
     "static/media/Pizza-Bros.e76e3bb4.jpg": "/static/media/Pizza-Bros.e76e3bb4.jpg",
     "static/media/React-Tic-Tac-Toe.18e9fcf9.png": "/static/media/React-Tic-Tac-Toe.18e9fcf9.png",
@@ -27,7 +28,7 @@
   "entrypoints": [
     "static/js/runtime-main.406dd86f.js",
     "static/js/2.58908c0a.chunk.js",
-    "static/css/main.7c7b77d8.chunk.css",
-    "static/js/main.98e51cc2.chunk.js"
+    "static/css/main.9be11d5d.chunk.css",
+    "static/js/main.a3adb72a.chunk.js"
   ]
 }
