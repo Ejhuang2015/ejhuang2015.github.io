@@ -22,6 +22,12 @@ body {
     margin-bottom: auto;
     border-radius: 50px;
 }
+@media screen and (max-width: 1024px) {
+    .container:not(:last-of-type) {
+        margin-bottom: 1rem;
+    }
+}
+
 .title {
     color: rgb(22,58,84);
     background-color: rgb(103, 188, 214,0.5);
@@ -110,6 +116,15 @@ strong {
 }
 .card-footer-item:not(:last-child) {
     border-right: 1px solid rgb(128,251,242);
+}
+/* Listed Columns */
+@media screen and (max-width: 1024px) {
+    .listCol:not(:first-child) { 
+        padding-top: 0;
+    }
+    .listCol:not(:last-child) { 
+        padding-bottom: 0;
+    }
 }
 
 /* Images and Icons */

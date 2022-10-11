@@ -7,8 +7,8 @@ import React from "react";
 import "./style.css";
 import { IContactLink } from "../../common/types"
 import { contactLinks } from "../../common/navLinks";
-import headshot from "../../assets/Edward.jpg"
-// import headshot2 from "../../assets/Headshot.jpg"
+import headshot2 from "../../assets/Edward.jpg"
+import headshot from "../../assets/Headshot.jpg"
 import emailIcon from "../../assets/email.png";
 
 // Main
@@ -30,9 +30,9 @@ function Billboard() {
   // =============================================================
   return (
     <div className="columns centered title reverseRow is-justify-content-center" id="top">
-      <header className="column is-5">
+      <header className="column is-6">
         <h1>Edward JieHao Huang</h1>
-        <h2>Full Stack Web Developer and Digital Artist</h2>
+        <span className="typewriter">Full Stack Web Developer and Digital Artist</span>
         <hr />
         <p className="quote">
           Currently employed at Walkin' Pets <br/>
@@ -47,8 +47,13 @@ function Billboard() {
           </a>
         </div>
       </header>
-      <div className="column is-3 is-flex is-justify-content-center is-align-items-center">
-        <img src={headshot} alt="Headshot of Edward Huang" className="my-auto profilePicture" />
+      <div className="column is-4 is-flex is-justify-content-center is-align-items-center">
+        <div className="pfpBorder">
+          <div className="pfpContent">
+            <img src={headshot2} alt="Headshot of Edward Huang" className="my-auto profilePicture" />
+            <img src={headshot} alt="Headshot of Edward Huang" className="my-auto profilePicture pfpInit" />
+          </div>
+        </div>
       </div>
     </div>
   )

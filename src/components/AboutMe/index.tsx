@@ -16,19 +16,19 @@ function AboutMe() {
               </p>
             </div>
             <div className="column is-5 container mx-5">
-              <div className="columns about">
-                <div className="column is-4">
+              <div className="columns is-multiline about">
+                <div className="column is-4-widescreen">
                   <header className="about">Traits</header>
                   <hr className="fullHR"/>
                   <div className="columns">
-                    <div className="column is-6">
+                    <div className="column is-6 listCol">
                       <ul className="noBullets">
                         <li>Agile</li>
                         <li>Anylytical</li>
                         <li>Creative</li>
                       </ul>
                     </div>
-                    <div className="column is-6">
+                    <div className="column is-6 listCol">
                       <ul className="noBullets">
                         <li>Focused</li>
                         <li>Passionate</li>
@@ -37,25 +37,25 @@ function AboutMe() {
                     </div>
                   </div>
                 </div>
-                <div className="column is-8">
+                <div className="column is-8-widescreen">
                   <header className="about">Skills</header>
                   <hr className="fullHR"/>
                   <div className="columns">
-                    <div className="column is-4">
+                    <div className="column is-4 listCol">
                       <ul className="noBullets">
                         <li>Typescript</li>
                         <li>React</li>
                         <li>NodeJS</li>
                       </ul>
                     </div>
-                    <div className="column is-4">
+                    <div className="column is-4 listCol">
                       <ul className="noBullets">
                         <li>e-Commerce</li>
                         <li>SEO</li>
                         <li>SQL</li>
                       </ul>
                     </div>
-                    <div className="column is-4">
+                    <div className="column is-4 listCol">
                       <ul className="noBullets">
                         <li>PHP</li>
                         <li>C#</li>

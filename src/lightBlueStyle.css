@@ -2,6 +2,10 @@
 /* HTML Style */
 html {
     background: rgb(127,177,186) ;
+    background-image: url('./assets/Abstract-BG.jpg') ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
 }
 
 * {
@@ -208,7 +212,7 @@ p.quote {
 
 
 /* Notes
-border-color: rgb(128,251,242) //80FBF2
+border-color: rgb(128,251,242) //#80FBF2
 Text color: rgb(22,58,84); //#163A54
 background-color: rgb(238,255,251,0.5); //EEFFFB
 
