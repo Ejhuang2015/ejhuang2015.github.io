@@ -51,6 +51,9 @@ header.about {
 }
 
 /* Bulma Overwrites */
+button {
+    font-size: 16px;
+}
 /* Strong/Bold */
 strong {
     color: rgb(22,58,84);

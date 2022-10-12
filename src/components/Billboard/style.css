@@ -30,7 +30,7 @@
 .pfpContent {
     position: absolute;
     inset: 10px;
-    z-index: 3;
+    z-index: 2;
 }
 .profilePicture {
     position: absolute;
