@@ -48,7 +48,7 @@ function WebPortfolio() {
                                 <p className="is-centered card-header-title py-1">Technology</p>
                             <hr className="smallHR"/>
                             <div className="card-content-tall">
-                                <ul>
+                                <ul className="noBullets alternating">
                                     {item.tools.map(mapTools)}
                                 </ul>
                             </div>

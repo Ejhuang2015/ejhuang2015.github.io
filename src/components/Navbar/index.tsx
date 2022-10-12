@@ -91,7 +91,7 @@ function Navbar() {
                         <img src={logo} alt="Edward Huang's logo" />
                     </a>
                     {/* <!-- Burger Menu --> */}
-                    <button className={burgerState ? "is-active navbar-burger" : "navbar-burger"} onClick={handleBurger} aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+                    <button type="button" className={burgerState ? "is-active navbar-burger" : "navbar-burger"} onClick={handleBurger} aria-label="menu" aria-expanded="false" data-target="navbarMenu">
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
                         <span aria-hidden="true"></span>
@@ -104,7 +104,7 @@ function Navbar() {
                         <a href="#aboutMe" className="navbar-item navLink" onClick={closeMenus}>About</a>
                         {/* <!-- Portfolio Dropdown --/> */}
                         <div className={portfolioState ? "navbar-item has-dropdown is-active" : "navbar-item has-dropdown"} id="navPortfolioHasDropdown">
-                            <button className="navbar-link" id="navPortfolio" onClick={handlePortfolio}>Portfolio</button>
+                            <button type="button" className="navbar-link" id="navPortfolio" onClick={handlePortfolio}>Portfolio</button>
                             <div className={portfolioState ? "navbar-dropdown" : "navbar-dropdown invis"} id="navPortfolioDropdown">
                                 {portfolioLinks.map(mapPortfolio)}
                             </div>
@@ -116,10 +116,10 @@ function Navbar() {
                     <div className="navbar-end">
                         {/* <!-- Contact Me Dropdown --> */}
                         <div className={contactState ? "navbar-item has-dropdown is-active" : "navbar-item has-dropdown"} id="navContactsHasDropdown">
-                            <button className="navbar-link" id="navContacts" onClick={handleContact}>Links and Contact</button>
+                            <button type="button" className="navbar-link" id="navContacts" onClick={handleContact}>Links and Contact</button>
                             <div className={contactState ? "navbar-dropdown" : "navbar-dropdown invis"} id="navContactsDropdown">
                                 {contactLinks.map(mapContacts)}
-                                <button className="navbar-item navLink" id="contactLink" onClick={handleModal}><img src={emailIcon} alt="mail icon" className="smallIcon" />Contact Me</button>
+                                <button type="button" className="navbar-item navLink" id="contactLink" onClick={handleModal}><img src={emailIcon} alt="mail icon" className="smallIcon" />Contact Me</button>
                             </div>
                         </div>
                     </div>

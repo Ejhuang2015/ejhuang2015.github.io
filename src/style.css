@@ -10,12 +10,10 @@ html {
 body {
     background: transparent;
     color:rgb(22,58,84);
-
     position: relative;
     min-height: 100vh;
     padding-top: 52px;
     padding-bottom: 71px;
-    font-family: 'Quicksand', sans-serif;
 }
 
 .container {

@@ -53,12 +53,9 @@ body {
 a {
     color: rgb(22,58,84);
 }
-a:visited {
-    color: rgb(22, 31, 84);
-}
 a:hover, 
 a:active {
-    color: rgb(95, 163, 252);
+    color: #2160c4;
 }
 
 /* Button Tags */
@@ -89,7 +86,6 @@ a:active {
     background-color: rgb(83, 32, 32);
     color: rgb(233, 195, 195);
 }
-
 /* Text Input Tags */
 input[type=text], input[type=email], textarea {
     margin: 5px 0px;
@@ -143,6 +139,13 @@ ul {
 ul.noBullets {
     list-style-type:none;
     margin: auto;
+}
+ul.noBullets > li {
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+ul.alternating > li:nth-child(odd) {
+    background-color: #80FBF255;
 }
 
 /* Fancy Text */

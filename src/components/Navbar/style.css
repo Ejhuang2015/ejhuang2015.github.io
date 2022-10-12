@@ -37,10 +37,6 @@ button.navLink:hover {
         border-bottom: 2px solid rgb(128,251,242);
     }
 }
-/* Dropdown background color match */
-.navbar-item.has-dropdown.is-active .navbar-link, .navbar-item.has-dropdown:focus .navbar-link, .navbar-item.has-dropdown:hover .navbar-link , .navLink{
-    background-color: rgb(192, 233, 223);
-}
 
 /* Anchor Jumps */
 #aboutMe,
