@@ -5,12 +5,10 @@
 // =============================================================
 import React, { useState, useRef } from "react";
 import useOnClickOutside from '../../utils/clickOutside';
-import Modal from '../Modal';
 import "./style.css";
 import { IContactLink, IPortfolioLink } from "../../common/types"
 import { contactLinks, portfolioLinks } from "../../common/navLinks";
 import logo from "../../assets/SignatureWide.png";
-import emailIcon from "../../assets/email.png";
 
 // Main
 // =============================================================
@@ -27,20 +25,15 @@ function Navbar() {
     const [portfolioState, setPortfolio] = useState(false);
     function handlePortfolio() {
         setPortfolio(!portfolioState);
+        setContact(false);
     };
 
     // Contacts and Links Dropdown Toggle
     const [contactState, setContact] = useState(false);
     function handleContact() {
         setContact(!contactState);
+        setPortfolio(false);
     };
-
-    // Contact Modal Toggle
-    const [modalState, setModal] = useState(false);
-    function handleModal() {
-        setModal(!modalState);
-        closeMenus();
-    }
 
     // Functions
     // =============================================================
@@ -49,11 +42,6 @@ function Navbar() {
         setBurger(false);
         setPortfolio(false);
         setContact(false);
-    }
-
-    // Closes modal
-    function closeModal() {
-        setModal(false);
     }
 
     // Close menus on click outside of navbar
@@ -116,26 +104,14 @@ function Navbar() {
                     <div className="navbar-end">
                         {/* <!-- Contact Me Dropdown --> */}
                         <div className={contactState ? "navbar-item has-dropdown is-active" : "navbar-item has-dropdown"} id="navContactsHasDropdown">
-                            <button type="button" className="navbar-link" id="navContacts" onClick={handleContact}>Links and Contact</button>
+                            <button type="button" className="navbar-link" id="navContacts" onClick={handleContact}>External Links</button>
                             <div className={contactState ? "navbar-dropdown" : "navbar-dropdown invis"} id="navContactsDropdown">
                                 {contactLinks.map(mapContacts)}
-                                <button type="button" className="navbar-item navLink" id="contactLink" onClick={handleModal}><img src={emailIcon} alt="mail icon" className="smallIcon" />Contact Me</button>
                             </div>
                         </div>
                     </div>
                 </div>
             </nav>
-
-            <Modal header="Reach out to me" 
-                body={
-                    <ul className="mt-0">
-                        <li><strong>Phone:</strong> <a href="tel:6033917861">(603) 391-7861</a></li>
-                        <li><strong>Email:</strong> <a href="mailto:ejhuang.2015@gmail.com">ejhuang.2015@gmail.com</a></li>
-                    </ul>
-                }
-                state={modalState}
-                closeFunc={closeModal}
-            />
 
         </div>
     )

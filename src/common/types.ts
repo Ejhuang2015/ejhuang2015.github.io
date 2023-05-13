@@ -17,6 +17,15 @@ export interface IContactLink {
     link: string;
 }
 
+// About Me
+// =============================================================
+// Technologies Carousel
+export interface ITechnologyCarousel {
+    id: number;
+    name: string;
+    icon: string;
+}
+
 // Portfolio Projects
 // =============================================================
 // Web Development

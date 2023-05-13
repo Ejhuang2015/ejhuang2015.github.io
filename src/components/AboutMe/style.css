@@ -1,0 +1,7 @@
+.swiper-button-next, .swiper-button-prev {
+    color: rgb(103, 188, 214);
+    filter: drop-shadow(0px 0px 5px rgb(128,251,242));
+}
+.swiper-3d .swiper-slide-shadow-right, .swiper-3d .swiper-slide-shadow-left {
+    background-image:none;
+}

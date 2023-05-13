@@ -35,14 +35,14 @@ function Billboard() {
         <span className="typewriter">Full Stack Web Developer and Digital Artist</span>
         <hr />
         <p className="quote">
-          Currently employed at Walkin' Pets <br/>
-          as a Front End Web Developer and IT Support Technician.<br/>
-          Open to new oppurtunities in the Greater Boston MA area.
+          Skilled in creating visually stunning and user-friendly interfaces
+          <br/>
+          See my unique blend of creative and technical skills.
         </p>
         <hr />
         <div className="singleLine">
           {contactLinks.map(mapContacts)}
-          <a href="mailto:ejhuang.2015@gmail.com">
+          <a href="#contact">
             <img src={emailIcon} alt="Email Link" className="footerIcon"/>
           </a>
         </div>

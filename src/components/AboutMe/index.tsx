@@ -1,70 +1,69 @@
+// About Me Component
+// =============================================================
+
+// Dependencies
+// =============================================================
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, EffectCoverflow, Navigation } from "swiper";
+import { ITechnologyCarousel } from "../../common/types"
+import { technologyCarousel } from "../../common/technologyCarousel";
 
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import 'swiper/css/effect-coverflow';
+import 'swiper/css/autoplay';
+import "./style.css";
+
+// Main
+// =============================================================
 function AboutMe() {
+    // Map Functions
+    // =============================================================
+    // Technology Carousel
+    function mapCarousel(item: ITechnologyCarousel) {
+        return (
+          <SwiperSlide key={item.id}>
+            <div>
+                <img src={item.icon} alt={`${item.name} logo`}/>
+                <p className="content">{item.name}</p>
+            </div>
+          </SwiperSlide>
+        )
+    };
 
+    // Render
+    // =============================================================
     return (
         <div className="centered" id="aboutMe">
-          <h3 className="sectionTitle mb-6">About</h3>
-          <div className="columns is-justify-content-center">
-            <div className="column is-5 container mx-5">
-              <header className="about">Bio</header>
+          <h3 className="sectionTitle mb-6">Bio</h3>
+          <div className="is-justify-content-center">
+            <div className="container mb-2 p-3">
+              <header className="about">About Me</header>
               <hr className="smallHR"/>
               <p className="content">
-              A graduate from University of New Hampshire’s full stack coding bootcamp where I learned technologies ranging from Typescript and React to Express.js and MongoDB and a graduate from Becker College where I studied interactive media design with a focus on digital illustration.<br/>
-              Within my experience, I have created many beautiful and functional web applications that are responsive, clean, and scalable.<br/>
-              I've also been working with multiple e-commerce sites within the pet health and mobility solutions industry, researching and creating intricate web components to drive new customer sales and boost client retention.
+                I am a graduate of the University of New Hampshire's Full Stack Coding Bootcamp, where I gained proficiency in a range of cutting-edge technologies, including Typescript, React, Express.js, and MongoDB. Additionally, I hold a degree from Becker College, where I studied Interactive Media Design with a focus on Digital Illustration.
+                <br/>
+                Throughout my professional experience, I have created numerous aesthetically pleasing and functional web applications that are responsive, user-friendly, and easily scalable. I have also worked extensively with multiple e-commerce and registration sites within industries such as pet health, human genetics, and industrial manufacturing.
               </p>
             </div>
-            <div className="column is-5 container mx-5">
-              <div className="columns is-multiline about">
-                <div className="column is-4-widescreen">
-                  <header className="about">Traits</header>
-                  <hr className="fullHR"/>
-                  <div className="columns">
-                    <div className="column is-6 listCol">
-                      <ul className="noBullets">
-                        <li>Agile</li>
-                        <li>Anylytical</li>
-                        <li>Creative</li>
-                      </ul>
-                    </div>
-                    <div className="column is-6 listCol">
-                      <ul className="noBullets">
-                        <li>Focused</li>
-                        <li>Passionate</li>
-                        <li>Organized</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div className="column is-8-widescreen">
-                  <header className="about">Skills</header>
-                  <hr className="fullHR"/>
-                  <div className="columns">
-                    <div className="column is-4 listCol">
-                      <ul className="noBullets">
-                        <li>Typescript</li>
-                        <li>React</li>
-                        <li>NodeJS</li>
-                      </ul>
-                    </div>
-                    <div className="column is-4 listCol">
-                      <ul className="noBullets">
-                        <li>e-Commerce</li>
-                        <li>SEO</li>
-                        <li>SQL</li>
-                      </ul>
-                    </div>
-                    <div className="column is-4 listCol">
-                      <ul className="noBullets">
-                        <li>PHP</li>
-                        <li>C#</li>
-                        <li>Python</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div className="container p-3">
+                <header className="about">Technologies I've Worked With</header>
+                <hr className="smallHR"/>
+                <Swiper
+                  modules={[Navigation,EffectCoverflow,Autoplay]}
+                  slidesPerView={3}
+                  spaceBetween={15}
+                  navigation={true}
+                  loop={true}
+                  effect={"coverflow"}
+                  autoplay={
+                    {delay: 10000}
+                  }
+                >                  
+                  {technologyCarousel.map(mapCarousel)}
+                </Swiper>
             </div>
           </div>
         </div>

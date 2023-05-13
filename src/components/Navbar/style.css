@@ -1,3 +1,11 @@
+/* Bulma Overides */
+.navbar-item, .navbar-link {
+    color: rgb(22,58,84);
+}
+a.navbar-item:hover, .navbar-item.has-dropdown.is-active .navbar-link, .navbar-item.has-dropdown:focus .navbar-link, .navbar-item.has-dropdown:hover .navbar-link {
+    background-color: rgba(238,255,251,.75)!important;
+}
+
 /* Navigation Bar */
 nav.navbar {
     position:fixed;
@@ -15,17 +23,23 @@ nav.navbar,
     background-color: rgb(192, 233, 223);
     border-bottom: 2px solid rgb(128,251,242);
 }
-/* Link Hover */
-button.navLink:hover {
-    cursor: pointer;
-    padding-right: 3rem;
-    background-color: rgb(255,255,255);
+
+/* Dropdown Buttons */
+button.navbar-link {
+    width:100%;
+    text-align: left;
 }
 
 /* Dropdown arrow color */
 .navbar-link:not(.is-arrowless)::after {
     border-color:rgb(103, 188, 214);
 }
+
+/* Dropdown Links */
+a.navLink {
+    font-size: 16px;
+}
+
 /* Bottom border */
 @media screen and (min-width: 1024px) {
     .navbar-dropdown {
