@@ -20,7 +20,7 @@ const webProjects: IWebPortfolio[] = [
     {
         id: 0,
         title: "Healthy-U",
-        desc: `This is a practice application on full-stack web development. Created using Node.js, Express.js, MongoDB, Auth0, and React. Users are first brought the the home page where a few cards about nutrition and meditation are displayed. Accessing any other page requires user to login/signup through Auth0. The main appeal of this project lies in the profile page where users are greeted with a daily goal tracker where you can check off how many glasses of water, servings of fruits/veggies, and unhealthy habits the user has done today. Below that is another component where users can enter in their own challenge which requires the user to report in for 49 days to better themselves.`,
+        desc: `This is a practice application on full-stack web development. Created using Node.js, Express.js, MongoDB, Auth0, and React. Users are first brought to the home page where a few cards about nutrition and meditation are displayed. Accessing any other page requires the user to login/signup through Auth0. The main appeal of this project lies in the profile page where users are greeted with a daily goal tracker where you can check off how many glasses of water, servings of fruits/veggies, and unhealthy habits the user has done today. Below that is another component where users can enter in their own challenge which requires the user to report in for 49 days to better themselves.`,
         job: "Created and maintained the backend server, developed all the functional React components, implemented authentication",
         tools: ["React", "Bootstrap", "Express", "MongoDB", "Auth0", "Netlify", "Heroku", "Material UI"],
         image: healthyu,
@@ -60,7 +60,7 @@ const webProjects: IWebPortfolio[] = [
     {
         id: 4,
         title: "Weather Dashboard",
-        desc: `This project is a practice on using api and ajax. It is weather checking application where the user can enter in a city and find the its current weather, temperature, 5 day update and more. The application also keeps track of past cities that the user has searched for and can quickly bring up the latest information for that city. On a page load, the last city to be manually searched for is brought up. A clear button is provided to clear the search history.`,
+        desc: `This project is a practice on using api and ajax. It is a weather checking application where the user can enter in a city and find its current weather, temperature, 5 day update and more. The application also keeps track of past cities that the user has searched for and can quickly bring up the latest information for that city. On a page load, the last city to be manually searched for is brought up. A clear button is provided to clear the search history.`,
         job: "Developed the site to practice using and learning about a RESTful api",
         tools: ["jQuery", "OpenWeather Api", "Bootstrap"],
         image: weatherDash,
@@ -70,7 +70,7 @@ const webProjects: IWebPortfolio[] = [
     {
         id: 5,
         title: "CLI Employee Tracker",
-        desc: `This is a mySQL practice CLI application. Within the console, the user is able to perform CRUD opertaions against three joined tables. It utilizes the Inquirer.js package to prompt for user input and cycling through the options. Also inside is the console.table package to help create a better looking table within the console.`,
+        desc: `This is a mySQL practice CLI application. Within the console, the user is able to perform CRUD operations against three joined tables. It utilizes the Inquirer.js package to prompt for user input and cycling through the options. Also inside is the console.table package to help create a better looking table within the console.`,
         job: "Designed this application as a start to learning backend web development",
         tools: ["MySQL", "Express", "Inquirer"],
         image: employeeTracker,
