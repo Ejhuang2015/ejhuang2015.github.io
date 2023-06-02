@@ -1,6 +1,6 @@
 /* Bulma Overides */
 .navbar-item, .navbar-link {
-    color: rgb(22,58,84);
+    color: var(--darkBlue);
 }
 a.navbar-item:hover, .navbar-item.has-dropdown.is-active .navbar-link, .navbar-item.has-dropdown:focus .navbar-link, .navbar-item.has-dropdown:hover .navbar-link {
     background-color: rgba(238,255,251,.75)!important;
@@ -21,7 +21,7 @@ nav.navbar {
 nav.navbar,
 .navbar-menu {
     background-color: rgb(192, 233, 223);
-    border-bottom: 2px solid rgb(128,251,242);
+    border-bottom: 2px solid var(--lightBlue);
 }
 
 /* Dropdown Buttons */
@@ -44,11 +44,11 @@ a.navLink {
 @media screen and (min-width: 1024px) {
     .navbar-dropdown {
         background-color: rgb(192, 233, 223);
-        border: 2px solid rgb(128,251,242);
+        border: 2px solid var(--lightBlue);
         border-top: 0px;
     }
     .borderClean {
-        border-bottom: 2px solid rgb(128,251,242);
+        border-bottom: 2px solid var(--lightBlue);
     }
 }
 

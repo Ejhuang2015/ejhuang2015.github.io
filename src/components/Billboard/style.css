@@ -12,7 +12,7 @@
     content: "";
     position: absolute;
     inset: -10px 100px;
-    background: linear-gradient(315deg, #80fbf2, #e0f5f3);
+    background: linear-gradient(315deg, var(--lightBlue), #e0f5f3);
     transition: 0.5s;
     animation: animated-pfp 4s linear infinite;
 }
@@ -52,11 +52,57 @@
     font-family: monospace;
     background: 
         linear-gradient(-90deg, #e0f5f3 5px, #0000 0) 10px 0 no-repeat, 
-        linear-gradient(rgb(22,58,84) 0 0) 0 0 no-repeat;
+        linear-gradient(var(--darkBlue) 0 0) 0 0 no-repeat;
     background-size: calc(var(--length)*1ch) 200%;
     -webkit-background-clip: padding-box, text;
     background-clip: padding-box, text;
     animation: animated-cursor .5s steps(1) infinite, animated-text calc(var(--length)*.1s) steps(var(--length)) forwards;
+}
+
+.embedPDF {
+    border: 0; top: 0; left: 0; width: 640; height: 700; position: absolute;
+}
+
+.magic {
+    display: inline-block;
+    position: relative;
+}
+  
+.magic > .magicStar {
+    --size: clamp(20px, 1.5vw, 30px);
+    
+    animation: scale 700ms ease forwards;
+    display: block;
+    height: var(--size);
+    left: var(--star-left);
+    position: absolute;
+    top: var(--star-top);
+    width: var(--size);
+}
+  
+.magic > .magicStar > svg {
+    animation: rotate 1000ms linear infinite;
+    display: block;
+    opacity: 0.7;
+}
+  
+.magic > .magicStar > svg > path {
+    fill: var(--lightBlue);
+}
+
+.magic > .magicText {
+    animation: background-pan 5s linear infinite;
+    background: linear-gradient(
+      to right,
+      var(--lightBlue),
+      var(--babyBlue),
+      var(--whiteBlue),
+      var(--lightBlue)
+    );
+    background-size: 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    filter: drop-shadow(0 1px 2px var(--darkBlue));
 }
 
 @keyframes animated-pfp {
@@ -79,3 +125,32 @@
     }
 }
 
+@keyframes background-pan {
+    from {
+      background-position: 0% center;
+    }
+    
+    to {
+      background-position: -200% center;
+    }
+}
+
+@keyframes scale {
+    from, to {
+      transform: scale(0);
+    }
+    
+    50% {
+      transform: scale(1);
+    }
+}
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    
+    to {
+      transform: rotate(180deg);
+    }
+}

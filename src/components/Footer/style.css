@@ -10,7 +10,7 @@
     bottom: 0px;
 
     border-top: solid 5px;
-    border-image: radial-gradient(#80acff, rgb(128,251,242)) 1;
+    border-image: radial-gradient(#80acff, var(--lightBlue)) 1;
 
     padding: 0px;
 }

@@ -17,7 +17,7 @@ html {
 /* Body Style */
 body {
     background: transparent;
-    color:rgb(22,58,84);
+    color:var(--darkBlue);
 }
 
 /* Header Style */
@@ -25,16 +25,16 @@ body {
     background-color: rgb(238,255,251, 0.5);
     padding: 10px;
     padding-top: 20px;
-    border-bottom: solid 2px rgb(128,251,242);
+    border-bottom: solid 2px var(--lightBlue);
 }
 
 /* Main Content Container */
 .container {
     padding: 5px;
     margin: auto;
-    background: rgb(238,255,251,0.50);
+    background: rgb(238,255,251,0.5);
     border-radius: 25px;
-    border: 2px solid rgb(128,251,242);
+    border: 2px solid var(--lightBlue);
 }
 
 /* Section Header/Title */
@@ -43,7 +43,7 @@ body {
     font-weight: bold;
     margin: 0px auto 15px auto;
     width: 80%;
-    border: 2px solid rgb(128,251,242);
+    border: 2px solid var(--lightBlue);
     border-radius: 10px;
     background-color: rgb(103, 188, 214,0.5);
 }
@@ -51,7 +51,7 @@ body {
 /* ----- 2. Element Formatting Options----- */
 /* Anchor Tags */
 a {
-    color: rgb(22,58,84);
+    color: var(--darkBlue);
 }
 a:hover, 
 a:active {
@@ -66,8 +66,8 @@ a:active {
 .buttonBlue {
     border-radius: 5px;
     background-color:  rgb(224, 245, 243);
-    color: rgb(22,58,84);
-    border-color: rgb(128,251,242);
+    color: var(--darkBlue);
+    border-color: var(--lightBlue);
 }
 .buttonBlue:hover, 
 .buttonBlue:active {
@@ -90,7 +90,7 @@ a:active {
 input[type=text], input[type=email], textarea {
     margin: 5px 0px;
     padding: 12px;
-    border: 1px solid rgb(128,251,242);
+    border: 1px solid var(--lightBlue);
     resize: vertical;
     border-radius: 3px;
 }
@@ -112,7 +112,7 @@ h2 {
 /* Horizontal Rule */
 hr {
     size: 2px;
-    background-color: rgb(128,251,242);
+    background-color: var(--lightBlue);
 }
 hr.tinyHR {
     width: 25%;
@@ -184,7 +184,7 @@ p.quote {
 .underlined {
     padding-bottom: 0px;
     margin-bottom: 5px;
-    border-bottom: solid 1px rgb(128,251,242);
+    border-bottom: solid 1px var(--lightBlue);
 }
 
 /* Hide content */
@@ -204,7 +204,7 @@ p.quote {
 
 /* Add in a border */
 .bordered {
-    border: 2px solid rgb(128,251,242);
+    border: 2px solid var(--lightBlue);
     padding: 2px;
 }
 
@@ -213,11 +213,19 @@ p.quote {
     border-radius: 25px;
 }
 
+/* ----- 4. Variables ----- */
+/* Colors */
+:root {
+    --lightBlue: #80FBF2;
+    --darkBlue: #163A54;
+    --whiteBlue: #EEFFFB;
+    --babyBlue: #5FA3FC;
+}
 
 /* Notes
-border-color: rgb(128,251,242) //#80FBF2
+border-color: rgb(128,251,242) #80FBF2
 Text color: rgb(22,58,84); //#163A54
-background-color: rgb(238,255,251,0.5); //EEFFFB
+background-color: rgb(238,255,251,0.5); //#EEFFFB
 
 Hover color: rgb(95, 163, 252); //5FA3FC
 

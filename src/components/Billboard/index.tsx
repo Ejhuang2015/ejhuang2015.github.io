@@ -3,7 +3,7 @@
 
 // Dependencies
 // =============================================================
-import React from "react";
+import React, {useState} from "react";
 import "./style.css";
 import { IContactLink } from "../../common/types"
 import { contactLinks } from "../../common/navLinks";
@@ -31,9 +31,13 @@ function Billboard() {
   return (
     <div className="columns centered title reverseRow is-justify-content-center" id="top">
       <header className="column is-6">
-        <h1>Edward JieHao Huang</h1>
-        <span className="typewriter">Full Stack Web Developer and Digital Artist</span>
-        <hr />
+        <h1>
+          <span className="magic">
+            <span className="magicText">Edward JieHao Huang</span>
+          </span>
+        </h1>
+        <span className="typewriter">Full Stack Developer and Digital Artist</span>
+        <hr/>
         <p className="quote">
           Skilled in creating visually stunning and user-friendly interfaces
           <br/>
@@ -55,6 +59,7 @@ function Billboard() {
           </div>
         </div>
       </div>
+      {/* <iframe src="https://drive.google.com/file/d/16q2MZhZ3RCwJvsU0yipI_twfHVOGhUC9/preview?usp=embed_googleplus" className="embedPDF"></iframe> */}
     </div>
   )
 }
