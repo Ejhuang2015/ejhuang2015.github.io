@@ -68,7 +68,7 @@
     position: relative;
 }
   
-.magic > .magicStar {
+.magic .magicStar {
     --size: clamp(20px, 1.5vw, 30px);
     
     animation: scale 700ms ease forwards;
@@ -78,15 +78,16 @@
     position: absolute;
     top: var(--star-top);
     width: var(--size);
+    z-index: 99;
 }
   
-.magic > .magicStar > svg {
+.magic .magicStar > svg {
     animation: rotate 1000ms linear infinite;
     display: block;
     opacity: 0.7;
 }
   
-.magic > .magicStar > svg > path {
+.magic .magicStar > svg > path {
     fill: var(--lightBlue);
 }
 
