@@ -3,7 +3,7 @@
 
 // Dependencies
 // =============================================================
-import React, {useState, useEffect} from "react";
+import React, {useEffect} from "react";
 import "./style.css";
 import { IContactLink } from "../../common/types"
 import { contactLinks } from "../../common/navLinks";
@@ -14,11 +14,6 @@ import emailIcon from "../../assets/email.png";
 // Main
 // =============================================================
 function Billboard() {
-  // State Management
-  // =============================================================
-  // Stars Refresh
-  const [starState, setStar] = useState(<span></span>);
-
   // Functions
   // =============================================================
   // Link Items
@@ -37,19 +32,37 @@ function Billboard() {
     )
   }
 
+  //Create a star
+  function createStar() {
+    const starElement = document.createElement("span");
+      starElement.classList.add("magicStar");
+      starElement.innerHTML = `<svg viewBox="0 0 512 512"><path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" /></svg>`;
+      starElement.style.setProperty("--star-left",`${randomize(-5, 100)}%`)
+      starElement.style.setProperty("--star-top",`${randomize(-10, 70)}%`)
+      document.getElementsByClassName("magic")[0].appendChild(starElement)
+  }
+
+  //Initiate Stars
   useEffect(() => {
-    let style:React.CSSProperties;
+    let initialRun = 0;
+    let speed = 250;
     setInterval(function() {
-      style = { "--star-left": `${randomize(-5, 100)}%`, "--star-top": `${randomize(-10, 70)}%` } as React.CSSProperties;
-      setStar(<span></span>)
-      setTimeout(() => {
-        setStar(<span className="magicStar" style={style}>
-          <svg viewBox="0 0 512 512">
-            <path d="M512 255.1c0 11.34-7.406 20.86-18.44 23.64l-171.3 42.78l-42.78 171.1C276.7 504.6 267.2 512 255.9 512s-20.84-7.406-23.62-18.44l-42.66-171.2L18.47 279.6C7.406 276.8 0 267.3 0 255.1c0-11.34 7.406-20.83 18.44-23.61l171.2-42.78l42.78-171.1C235.2 7.406 244.7 0 256 0s20.84 7.406 23.62 18.44l42.78 171.2l171.2 42.78C504.6 235.2 512 244.6 512 255.1z" />
-          </svg>
-        </span>)
-      },0)
-  }, 500);
+      if (initialRun < 3) {
+        createStar();
+        initialRun++
+        if (initialRun = 3) {
+          speed = 1000;
+        }
+      } else {
+        //Delete stars as they finish
+        setTimeout(() => {
+          if (document.getElementsByClassName("magicStar")) {
+            document.getElementsByClassName("magicStar")[0].remove();
+          }
+        }, 1000);
+        createStar();
+      }
+    }, speed);
   }, []);
 
   // Render
@@ -59,7 +72,6 @@ function Billboard() {
       <header className="column is-6">
         <h1>
           <span className="magic">
-          {starState}
           <span className="magicText">Edward JieHao Huang</span>
         </span>
         </h1>
