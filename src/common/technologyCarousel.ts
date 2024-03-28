@@ -19,7 +19,10 @@ import photoshop from "../assets/Tech_Logos/photoshop.png"
 import python from "../assets/Tech_Logos/python.png"
 import react from "../assets/Tech_Logos/react.png"
 import sass from "../assets/Tech_Logos/sass.png"
+import mysql from "../assets/Tech_Logos/mysql.png"
 import sql from "../assets/Tech_Logos/sql.png"
+import wordpress from "../assets/Tech_Logos/WordPress.png"
+import vbscript from "../assets/Tech_Logos/VBScript.png"
 import tailwind from "../assets/Tech_Logos/tailwind.png"
 import typescript from "../assets/Tech_Logos/ts.png"
 
@@ -82,9 +85,14 @@ const technologyCarousel: ITechnologyCarousel[] = [
         icon: bootstrap,
     },
     {
+        id: 19,
+        name: "SQL",
+        icon: sql,
+    },
+    {
         id: 11,
         name: "MySQL",
-        icon: sql,
+        icon: mysql,
     },
     {
         id: 12,
@@ -105,6 +113,16 @@ const technologyCarousel: ITechnologyCarousel[] = [
         id: 15,
         name: "C++",
         icon: cpp,
+    },
+    {
+        id: 20,
+        name: "VBScript",
+        icon: vbscript,
+    },
+    {
+        id: 21,
+        name: "WordPress",
+        icon: wordpress,
     },
     {
         id: 16,

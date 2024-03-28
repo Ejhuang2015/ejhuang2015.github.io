@@ -4,7 +4,7 @@ import "./style.css";
 function Footer() {
 
     return (
-        <footer className="footer">Edward JieHao Huang ©2023</footer>
+        <footer className="footer">Edward JieHao Huang ©{new Date().getFullYear()}</footer>
     )
 }
 

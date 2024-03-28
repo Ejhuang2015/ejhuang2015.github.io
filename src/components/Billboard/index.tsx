@@ -20,7 +20,7 @@ function Billboard() {
   function mapContacts(item: IContactLink) {
     return (
       <a href={item.link} target="_blank" rel="noreferrer noopener" key={item.id}>
-        <img src={item.icon} alt={`${item.name} link`} className="footerIcon" />
+        <img src={item.icon} alt={`${item.name} link`} title={item.name} className="footerIcon" />
       </a>
     )
   }
@@ -86,7 +86,7 @@ function Billboard() {
         <div className="singleLine">
           {contactLinks.map(mapContacts)}
           <a href="#contact">
-            <img src={emailIcon} alt="Email Link" className="footerIcon"/>
+            <img src={emailIcon} alt="Email Link" title="Send me an email" className="footerIcon"/>
           </a>
         </div>
       </header>

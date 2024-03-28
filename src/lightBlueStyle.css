@@ -152,7 +152,6 @@ ul.alternating > li:nth-child(odd) {
 p.quote {
     font-size: 25px;
     font-weight: normal;
-    font-family: cursive;
     font-style: italic;
     line-height: 2rem;
 }
