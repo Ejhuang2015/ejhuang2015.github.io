@@ -25,6 +25,8 @@ import wordpress from "../assets/Tech_Logos/WordPress.png"
 import vbscript from "../assets/Tech_Logos/VBScript.png"
 import tailwind from "../assets/Tech_Logos/tailwind.png"
 import typescript from "../assets/Tech_Logos/ts.png"
+import java from "../assets/Tech_Logos/java.png"
+import spring from "../assets/Tech_Logos/spring.png"
 
 // Technology Items
 // =============================================================
@@ -105,6 +107,11 @@ const technologyCarousel: ITechnologyCarousel[] = [
         icon: php,
     },
     {
+        id: 22,
+        name: "Java",
+        icon: java,
+    },
+    {
         id: 14,
         name: "Python",
         icon: python,
@@ -120,14 +127,19 @@ const technologyCarousel: ITechnologyCarousel[] = [
         icon: vbscript,
     },
     {
-        id: 21,
-        name: "WordPress",
-        icon: wordpress,
+        id: 23,
+        name: "SpringBoot",
+        icon: spring,
     },
     {
         id: 16,
         name: "Github",
         icon: github,
+    },
+    {
+        id: 21,
+        name: "WordPress",
+        icon: wordpress,
     },
     {
         id: 17,
