@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.1b4df38a.css",
-    "main.js": "/static/js/main.e5bb2f2a.js",
+    "main.js": "/static/js/main.11a46841.js",
     "static/media/React-Tic-Tac-Toe.png": "/static/media/React-Tic-Tac-Toe.18e9fcf99c6d2c46d129.png",
     "static/media/Truffle Shuffle- Laptop.png": "/static/media/Truffle Shuffle- Laptop.546a68a2146a1de6c129.png",
     "static/media/Healthy-U.jpg": "/static/media/Healthy-U.a1c307f629d627296b1f.jpg",
@@ -27,10 +27,10 @@
     "static/media/WordPress.png": "/static/media/WordPress.551d812e44aa1abb513f.png",
     "index.html": "/index.html",
     "main.1b4df38a.css.map": "/static/css/main.1b4df38a.css.map",
-    "main.e5bb2f2a.js.map": "/static/js/main.e5bb2f2a.js.map"
+    "main.11a46841.js.map": "/static/js/main.11a46841.js.map"
   },
   "entrypoints": [
     "static/css/main.1b4df38a.css",
-    "static/js/main.e5bb2f2a.js"
+    "static/js/main.11a46841.js"
   ]
 }
