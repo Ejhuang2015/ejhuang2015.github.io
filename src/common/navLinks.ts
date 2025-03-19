@@ -17,12 +17,12 @@ const contactLinks: IContactLink[] = [
         icon: gitHubIcon,
         link: "https://github.com/Ejhuang2015"
     },
-    {
-        id: 1,
-        name: "Artstation",
-        icon: artStationIcon,
-        link: "https://zekeroxblade.artstation.com/"
-    },
+    // {
+    //     id: 1,
+    //     name: "Artstation",
+    //     icon: artStationIcon,
+    //     link: "https://zekeroxblade.artstation.com/"
+    // },
     {
         id: 2,
         name: "LinkedIn",

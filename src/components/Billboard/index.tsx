@@ -21,6 +21,7 @@ function Billboard() {
     return (
       <a href={item.link} target="_blank" rel="noreferrer noopener" key={item.id}>
         <img src={item.icon} alt={`${item.name} link`} title={item.name} className="footerIcon" />
+        <p className="smallText">{item.name}</p>
       </a>
     )
   }
@@ -87,6 +88,7 @@ function Billboard() {
           {contactLinks.map(mapContacts)}
           <a href="#contact">
             <img src={emailIcon} alt="Email Link" title="Send me an email" className="footerIcon"/>
+            <p className="smallText">Email</p>
           </a>
         </div>
       </header>
