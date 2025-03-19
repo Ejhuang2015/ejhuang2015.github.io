@@ -56,10 +56,10 @@ function WebPortfolio() {
                     </div>
                 </div>
                 <footer className="card-footer">
-                    <a href={item.appLink} className="card-footer-item" target="_blank"
-                        rel="noreferrer noopener">See the App</a>
-                    <a href={item.sourceLink} className="card-footer-item" target="_blank"
-                        rel="noreferrer noopener">View the Code</a>
+                    {item.appLink ? <a href={item.appLink} className="card-footer-item" target="_blank"
+                        rel="noreferrer noopener">See the App</a> : ""}
+                    {item.sourceLink ? <a href={item.sourceLink} className="card-footer-item" target="_blank"
+                        rel="noreferrer noopener">View the Code</a> : ""}
                 </footer>
             </div>
         )

@@ -14,8 +14,6 @@ Any web browser that allows the user to open and view HTML files and run JavaScr
 
 Thanks to the following people who have contributed to this project:
 
-* [Scott Byer](https://github.com/switch120) 
-* [Mike Fearly](https://michaelfearnley.com/)
 * UNH Full Stack Development Bootcamp
 * The [Bulma team](https://bulma.io/) for their awesome CSS framework
 
@@ -24,7 +22,7 @@ Thanks to the following people who have contributed to this project:
 If you want to contact me you can reach me at <ejhuang.2015@gmail.com>.
 
 ## License
-### Copyright (c) [2020] [Edward Huang]
+### Copyright (c) [2025] [Edward Huang]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
